@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicTopSection,
   DefaultTopSectionProps
-} from "./plasmic/simple_light_landing_page/PlasmicTopSection";
+} from "./plasmic/test_project/PlasmicTopSection";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined

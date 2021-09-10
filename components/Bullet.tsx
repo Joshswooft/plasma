@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicBullet,
   DefaultBulletProps
-} from "./plasmic/simple_light_landing_page/PlasmicBullet";
+} from "./plasmic/test_project/PlasmicBullet";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined

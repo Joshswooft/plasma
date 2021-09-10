@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicPlan,
   DefaultPlanProps
-} from "./plasmic/simple_light_landing_page/PlasmicPlan";
+} from "./plasmic/test_project/PlasmicPlan";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can

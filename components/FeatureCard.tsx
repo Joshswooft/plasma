@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicFeatureCard,
   DefaultFeatureCardProps
-} from "./plasmic/simple_light_landing_page/PlasmicFeatureCard";
+} from "./plasmic/test_project/PlasmicFeatureCard";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
