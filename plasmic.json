@@ -232,32 +232,6 @@
           "cssFilePath": "plasmic/simple_light_landing_page/PlasmicFaq.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "_zn6FOHanpEirJ",
-          "name": "Pricing",
-          "type": "managed",
-          "projectId": "3gM4xrSdYFXoe1exZP2Pz5",
-          "renderModuleFilePath": "plasmic/simple_light_landing_page/PlasmicPricing.tsx",
-          "importSpec": {
-            "modulePath": "../pages/pricing.tsx"
-          },
-          "cssFilePath": "plasmic/simple_light_landing_page/PlasmicPricing.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "-agTewMvSCtXjY",
-          "name": "Features",
-          "type": "managed",
-          "projectId": "3gM4xrSdYFXoe1exZP2Pz5",
-          "renderModuleFilePath": "plasmic/simple_light_landing_page/PlasmicFeatures.tsx",
-          "importSpec": {
-            "modulePath": "../pages/features.tsx"
-          },
-          "cssFilePath": "plasmic/simple_light_landing_page/PlasmicFeatures.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         }
       ],
       "icons": [
