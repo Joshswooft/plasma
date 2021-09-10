@@ -1,7 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 
-require('dotenv').config()
-
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
