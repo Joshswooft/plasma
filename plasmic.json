@@ -182,19 +182,6 @@
           "componentType": "component"
         },
         {
-          "id": "_zn6FOHanpEirJ",
-          "name": "Pricing",
-          "type": "managed",
-          "projectId": "3gM4xrSdYFXoe1exZP2Pz5",
-          "renderModuleFilePath": "plasmic/simple_light_landing_page/PlasmicPricing.tsx",
-          "importSpec": {
-            "modulePath": "../pages/pricing.tsx"
-          },
-          "cssFilePath": "plasmic/simple_light_landing_page/PlasmicPricing.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "vmTqKIv2tV0IdM",
           "name": "BaseCard",
           "type": "managed",
@@ -245,6 +232,19 @@
           "cssFilePath": "plasmic/simple_light_landing_page/PlasmicFaq.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "_zn6FOHanpEirJ",
+          "name": "Pricing",
+          "type": "managed",
+          "projectId": "3gM4xrSdYFXoe1exZP2Pz5",
+          "renderModuleFilePath": "plasmic/simple_light_landing_page/PlasmicPricing.tsx",
+          "importSpec": {
+            "modulePath": "../pages/pricing.tsx"
+          },
+          "cssFilePath": "plasmic/simple_light_landing_page/PlasmicPricing.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         },
         {
           "id": "-agTewMvSCtXjY",
