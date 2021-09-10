@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicHeader,
   DefaultHeaderProps
-} from "./plasmic/simple_light_landing_page/PlasmicHeader";
+} from "./plasmic/test_project/PlasmicHeader";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined

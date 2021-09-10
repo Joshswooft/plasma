@@ -1,0 +1,84 @@
+.root:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox__gMrda {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.freeBox___4TbSe {
+  display: flex;
+  flex-direction: column;
+}
+.freeBox___4TbSe > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: calc(0px - 8px);
+  height: calc(100% + 8px);
+}
+.freeBox___4TbSe > :global(.__wab_flex-container) > *,
+.freeBox___4TbSe > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___4TbSe > :global(.__wab_flex-container) > picture > img,
+.freeBox___4TbSe
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 8px;
+}
+.slotName {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+}
+.text__dVBko {
+  font-size: 48px;
+}
+.freeBox__g1UWk {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.freeBox__g1UWk > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 8px);
+  height: calc(100% + 8px);
+}
+.freeBox__g1UWk > :global(.__wab_flex-container) > *,
+.freeBox__g1UWk > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__g1UWk > :global(.__wab_flex-container) > picture > img,
+.freeBox__g1UWk
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 8px;
+}
+.bullet__s3MS4:global(.__wab_instance) {
+  position: relative;
+}
+.bullet__ydKj2:global(.__wab_instance) {
+  position: relative;
+}
+.bullet__mbmJq:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox___8G8O1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(13px + 8px) !important;
+}
+.svg__pMp5I {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  object-fit: cover;
+}
