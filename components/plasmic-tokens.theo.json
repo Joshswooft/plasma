@@ -993,7 +993,7 @@
     {
       "name": "Spectrum/Coral/50",
       "type": "color",
-      "value": "rgb(245,83,61)",
+      "value": "#F5533D",
       "category": "color",
       "meta": {
         "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -2988,6 +2988,16 @@
       "meta": {
         "projectId": "seaQhLVS4bbjiGvJJrRwyL",
         "id": "PgHNel3rj"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "9s3hvugvPEapsUg57TTaoR",
+        "id": "LRK6sxfxZ"
       }
     },
     {

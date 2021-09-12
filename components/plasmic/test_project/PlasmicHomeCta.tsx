@@ -42,7 +42,7 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_test_project.module.css"; // plasmic-import: 9s3hvugvPEapsUg57TTaoR/projectcss
 import * as sty from "./PlasmicHomeCta.module.css"; // plasmic-import: -jVB3yJY4C3/css
 
-import SphereIcon from "./icons/PlasmicIcon__Sphere"; // plasmic-import: c-dOeIR3iTFz/icon
+import UndrawDestinationsFpv7SvgIcon from "./icons/PlasmicIcon__UndrawDestinationsFpv7Svg"; // plasmic-import: Ln9GZuDeys/icon
 
 export type PlasmicHomeCta__VariantMembers = {};
 
@@ -56,9 +56,9 @@ export const PlasmicHomeCta__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomeCta__OverridesType = {
   root?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
   textbox?: p.Flex<"input">;
   linkButton?: p.Flex<typeof LinkButton>;
-  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultHomeCtaProps {
@@ -86,6 +86,17 @@ function PlasmicHomeCta__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
+      {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
+        <div className={classNames(defaultcss.all, sty.freeBox__fRhPj)}>
+          <UndrawDestinationsFpv7SvgIcon
+            data-plasmic-name={"svg"}
+            data-plasmic-override={overrides.svg}
+            className={classNames(defaultcss.all, sty.svg)}
+            role={"img"}
+          />
+        </div>
+      ) : null}
+
       <p.Stack
         as={"div"}
         hasGap={true}
@@ -147,35 +158,24 @@ function PlasmicHomeCta__RenderFunc(props: {
           {"7 days free trial. No credit card required."}
         </div>
       </p.Stack>
-
-      {(hasVariant(globalVariants, "screen", "mobile") ? false : true) ? (
-        <div className={classNames(defaultcss.all, sty.freeBox__fRhPj)}>
-          <SphereIcon
-            data-plasmic-name={"svg"}
-            data-plasmic-override={overrides.svg}
-            className={classNames(defaultcss.all, sty.svg)}
-            role={"img"}
-          />
-        </div>
-      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "textbox", "linkButton", "svg"],
+  root: ["root", "svg", "textbox", "linkButton"],
+  svg: ["svg"],
   textbox: ["textbox"],
-  linkButton: ["linkButton"],
-  svg: ["svg"]
+  linkButton: ["linkButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  svg: "svg";
   textbox: "input";
   linkButton: typeof LinkButton;
-  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -239,9 +239,9 @@ export const PlasmicHomeCta = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    svg: makeNodeComponent("svg"),
     textbox: makeNodeComponent("textbox"),
     linkButton: makeNodeComponent("linkButton"),
-    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicHomeCta
     internalVariantProps: PlasmicHomeCta__VariantProps,

@@ -42,7 +42,7 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_test_project.module.css"; // plasmic-import: 9s3hvugvPEapsUg57TTaoR/projectcss
 import * as sty from "./PlasmicHeader.module.css"; // plasmic-import: 778_gT31YB5/css
 
-import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: b_x6v9Y693on/icon
+import PlaneLogosvgIcon from "./icons/PlasmicIcon__PlaneLogosvg"; // plasmic-import: bKgI4impz/icon
 
 export type PlasmicHeader__VariantMembers = {};
 
@@ -59,6 +59,7 @@ export type PlasmicHeader__OverridesType = {
   link?: p.Flex<"a"> & Partial<LinkProps>;
   svg?: p.Flex<"svg">;
   freeBox?: p.Flex<"div">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -94,7 +95,7 @@ function PlasmicHeader__RenderFunc(props: {
         href={"/" as const}
         platform={"nextjs"}
       >
-        <LogoIcon
+        <PlaneLogosvgIcon
           data-plasmic-name={"svg"}
           data-plasmic-override={overrides.svg}
           className={classNames(defaultcss.all, sty.svg)}
@@ -119,7 +120,19 @@ function PlasmicHeader__RenderFunc(props: {
         <LinkButton
           className={classNames("__wab_instance", sty.linkButton__ucy8U)}
           href={"/pricing" as const}
-          text={"Pricing"}
+          text={
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"Pricing"}
+            </div>
+          }
           type={"small" as const}
         />
 
@@ -134,7 +147,7 @@ function PlasmicHeader__RenderFunc(props: {
             className={classNames("__wab_instance", sty.linkButton__qz25U)}
             narrower={"narrower" as const}
             text={"Sign up ->"}
-            type={"solidBlack" as const}
+            type={"solidBlue" as const}
           />
         ) : null}
       </p.Stack>
@@ -143,10 +156,11 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "svg", "freeBox"],
+  root: ["root", "link", "svg", "freeBox", "text"],
   link: ["link", "svg"],
   svg: ["svg"],
-  freeBox: ["freeBox"]
+  freeBox: ["freeBox", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -156,6 +170,7 @@ type NodeDefaultElementType = {
   link: "a";
   svg: "svg";
   freeBox: "div";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -222,6 +237,7 @@ export const PlasmicHeader = Object.assign(
     link: makeNodeComponent("link"),
     svg: makeNodeComponent("svg"),
     freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

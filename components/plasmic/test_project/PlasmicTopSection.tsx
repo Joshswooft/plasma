@@ -87,24 +87,16 @@ function PlasmicTopSection__RenderFunc(props: {
           className={classNames(defaultcss.all, sty.freeBox__ySa8Q)}
         >
           <div className={classNames(defaultcss.all, sty.freeBox__yjyHd)}>
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.text__si299
-              )}
-            >
-              {"Make your website.."}
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.text__tWsaU
-              )}
-            >
-              {"wonderful"}
+            <div className={classNames(defaultcss.all, sty.freeBox__si299)}>
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.text__piKUt
+                )}
+              >
+                {"The future of modern travel."}
+              </div>
             </div>
           </div>
 
@@ -116,27 +108,27 @@ function PlasmicTopSection__RenderFunc(props: {
             )}
           >
             {
-              "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever."
+              "Thousands of businesses use Carbourne every day to calculate their Co2 emissions required to deliver products and services."
             }
           </div>
-        </p.Stack>
 
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(defaultcss.all, sty.freeBox__yoyo)}
-        >
-          <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__gEld)}
-            text={"Start free trial"}
-            type={"solidBlue" as const}
-          />
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(defaultcss.all, sty.freeBox__yoyo)}
+          >
+            <LinkButton
+              className={classNames("__wab_instance", sty.linkButton__gEld)}
+              text={"Start free trial"}
+              type={"solidBlue" as const}
+            />
 
-          <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__vvPlg)}
-            text={"Learn more"}
-            type={"solidBlack" as const}
-          />
+            <LinkButton
+              className={classNames("__wab_instance", sty.linkButton__vvPlg)}
+              text={"Learn more"}
+              type={"solidBlack" as const}
+            />
+          </p.Stack>
         </p.Stack>
 
         <div className={classNames(defaultcss.all, sty.freeBox__g9Ryq)}>
@@ -145,7 +137,7 @@ function PlasmicTopSection__RenderFunc(props: {
             data-plasmic-override={overrides.img}
             alt={""}
             className={classNames(defaultcss.img, sty.img)}
-            src={"/plasmic/test_project/images/heroImage.png"}
+            src={"/plasmic/test_project/images/undrawJourneyLwljsvg.svg"}
           />
         </div>
       </p.Stack>

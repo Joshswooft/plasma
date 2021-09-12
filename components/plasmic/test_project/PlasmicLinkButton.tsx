@@ -40,12 +40,14 @@ import * as projectcss from "./plasmic_test_project.module.css"; // plasmic-impo
 import * as sty from "./PlasmicLinkButton.module.css"; // plasmic-import: PsDbzcy_1H3c/css
 
 export type PlasmicLinkButton__VariantMembers = {
-  type: "solidBlue" | "solidBlack" | "outlineBlue" | "small";
+  type: "solidBlue" | "solidBlack" | "outlineBlue" | "small" | "unnamedVariant";
   narrower: "narrower";
 };
 
 export type PlasmicLinkButton__VariantsArgs = {
-  type?: SingleChoiceArg<"solidBlue" | "solidBlack" | "outlineBlue" | "small">;
+  type?: SingleChoiceArg<
+    "solidBlue" | "solidBlack" | "outlineBlue" | "small" | "unnamedVariant"
+  >;
   narrower?: SingleBooleanChoiceArg<"narrower">;
 };
 
@@ -73,7 +75,9 @@ export type PlasmicLinkButton__OverridesType = {
 export interface DefaultLinkButtonProps {
   text?: React.ReactNode;
   href?: string | PageHref;
-  type?: SingleChoiceArg<"solidBlue" | "solidBlack" | "outlineBlue" | "small">;
+  type?: SingleChoiceArg<
+    "solidBlue" | "solidBlack" | "outlineBlue" | "small" | "unnamedVariant"
+  >;
   narrower?: SingleBooleanChoiceArg<"narrower">;
   className?: string;
 }
@@ -102,7 +106,12 @@ function PlasmicLinkButton__RenderFunc(props: {
         ),
         [sty.root__type_small]: hasVariant(variants, "type", "small"),
         [sty.root__type_solidBlack]: hasVariant(variants, "type", "solidBlack"),
-        [sty.root__type_solidBlue]: hasVariant(variants, "type", "solidBlue")
+        [sty.root__type_solidBlue]: hasVariant(variants, "type", "solidBlue"),
+        [sty.root__type_unnamedVariant]: hasVariant(
+          variants,
+          "type",
+          "unnamedVariant"
+        )
       })}
       component={Link}
       href={args.href !== undefined ? args.href : ("#" as const)}

@@ -115,7 +115,7 @@
   object-fit: cover;
   color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
   width: 32px;
-  height: 32px;
+  height: 1em;
 }
 .freeBox__fOi {
   display: flex;

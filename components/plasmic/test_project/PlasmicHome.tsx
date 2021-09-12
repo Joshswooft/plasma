@@ -37,7 +37,6 @@ import Header from "../../Header"; // plasmic-import: 778_gT31YB5/component
 import TopSection from "../../TopSection"; // plasmic-import: UPgMAOBHz74/component
 import Section from "../../Section"; // plasmic-import: oVVzPbYKNL5/component
 import FeatureCard from "../../FeatureCard"; // plasmic-import: WtSsUtjw8TA/component
-import Testimonial from "../../Testimonial"; // plasmic-import: Yj7xu_zidJUc/component
 import HomeCta from "../../HomeCta"; // plasmic-import: -jVB3yJY4C3/component
 import Footer from "../../Footer"; // plasmic-import: URmcGzGZGqG/component
 
@@ -51,7 +50,6 @@ import * as sty from "./PlasmicHome.module.css"; // plasmic-import: PTxe7Daxv2V/
 import LightningIcon from "./icons/PlasmicIcon__Lightning"; // plasmic-import: z-6wWKMFSFjv/icon
 import HammerIcon from "./icons/PlasmicIcon__Hammer"; // plasmic-import: VCIye8NIWx6z/icon
 import PencilIcon from "./icons/PlasmicIcon__Pencil"; // plasmic-import: GMmt-niDVZRW/icon
-import SwapIcon from "./icons/PlasmicIcon__Swap"; // plasmic-import: q-J3i4huIIis/icon
 import SlotIcon from "./icons/PlasmicIcon__Slot"; // plasmic-import: EedUtefgBTIV/icon
 import CycleIcon from "./icons/PlasmicIcon__Cycle"; // plasmic-import: sesEwkyeF7Lc/icon
 import FacebookLogoIcon from "./icons/PlasmicIcon__FacebookLogo"; // plasmic-import: AJKC3aQXFcdJ/icon
@@ -74,7 +72,6 @@ export type PlasmicHome__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   topSection?: p.Flex<typeof TopSection>;
-  testimonial?: p.Flex<typeof Testimonial>;
   homeCta?: p.Flex<typeof HomeCta>;
   footer?: p.Flex<typeof Footer>;
 };
@@ -141,11 +138,17 @@ function PlasmicHome__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.header)}
               />
 
-              <TopSection
-                data-plasmic-name={"topSection"}
-                data-plasmic-override={overrides.topSection}
-                className={classNames("__wab_instance", sty.topSection)}
-              />
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.freeBox__q7KY3)}
+              >
+                <TopSection
+                  data-plasmic-name={"topSection"}
+                  data-plasmic-override={overrides.topSection}
+                  className={classNames("__wab_instance", sty.topSection)}
+                />
+              </p.Stack>
 
               <Section
                 className={classNames("__wab_instance", sty.section__bAp8)}
@@ -260,16 +263,34 @@ function PlasmicHome__RenderFunc(props: {
           </div>
 
           <div className={classNames(defaultcss.all, sty.freeBox__dtBh)}>
-            <div className={classNames(defaultcss.all, sty.freeBox___9VdOa)} />
-
             <div className={classNames(defaultcss.all, sty.freeBox__enJjU)}>
               <div className={classNames(defaultcss.all, sty.freeBox__tcXi2)}>
                 <Section
                   className={classNames("__wab_instance", sty.section__xgXdc)}
                   subtitle={
-                    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        defaultcss.__wab_text,
+                        sty.text__eYgs6
+                      )}
+                    >
+                      {
+                        "Our services enables you to find out exactly the emissions used in your travels whether thats by car, plane and even by sea!"
+                      }
+                    </div>
                   }
-                  title={"How Simple works"}
+                  title={
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        defaultcss.__wab_text,
+                        sty.text__w8DTk
+                      )}
+                    >
+                      {"Our travel services"}
+                    </div>
+                  }
                 />
 
                 <p.Stack
@@ -283,15 +304,16 @@ function PlasmicHome__RenderFunc(props: {
                       sty.featureCard__q0RIp
                     )}
                     description={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                      "Work out how to reduce your carbon footprint."
                     }
                     iconFront={
-                      <SwapIcon
-                        className={classNames(defaultcss.all, sty.svg___2MqBr)}
-                        role={"img"}
+                      <img
+                        alt={""}
+                        className={classNames(defaultcss.img, sty.img__dEZv)}
+                        src={"/plasmic/test_project/images/carDriving.gif"}
                       />
                     }
-                    title={"Initial Contact"}
+                    title={"Carbon Footprint"}
                   />
 
                   <FeatureCard
@@ -300,15 +322,25 @@ function PlasmicHome__RenderFunc(props: {
                       sty.featureCard__qnW5X
                     )}
                     description={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                      "Find out how much Co2 your holidays really produce."
                     }
                     iconFront={
-                      <SlotIcon
-                        className={classNames(defaultcss.all, sty.svg__hG4Bd)}
-                        role={"img"}
-                      />
+                      <React.Fragment>
+                        <img
+                          alt={""}
+                          className={classNames(defaultcss.img, sty.img__aU9)}
+                          src={
+                            "/plasmic/test_project/images/icons8AirplaneTakeOffgif.gif"
+                          }
+                        />
+
+                        <SlotIcon
+                          className={classNames(defaultcss.all, sty.svg__hG4Bd)}
+                          role={"img"}
+                        />
+                      </React.Fragment>
                     }
-                    title={"Discovery Session"}
+                    title={"Travel Breakdown"}
                   />
 
                   <FeatureCard
@@ -317,66 +349,35 @@ function PlasmicHome__RenderFunc(props: {
                       sty.featureCard__i36J
                     )}
                     description={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                      "Explore the logistical breakdown of your supply chain."
                     }
                     iconFront={
-                      <CycleIcon
-                        className={classNames(defaultcss.all, sty.svg__aj7So)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Contracting"}
-                  />
+                      <React.Fragment>
+                        <img
+                          alt={""}
+                          className={classNames(defaultcss.img, sty.img__z19)}
+                          src={
+                            "/plasmic/test_project/images/icons8Truckgif.gif"
+                          }
+                        />
 
-                  <FeatureCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.featureCard__nc1Sg
-                    )}
-                    description={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        <CycleIcon
+                          className={classNames(defaultcss.all, sty.svg__aj7So)}
+                          role={"img"}
+                        />
+                      </React.Fragment>
                     }
-                    iconFront={
-                      <HammerIcon
-                        className={classNames(defaultcss.all, sty.svg__kFjEd)}
-                        role={"img"}
-                      />
+                    title={
+                      <div
+                        className={classNames(
+                          defaultcss.all,
+                          defaultcss.__wab_text,
+                          sty.text__sROjX
+                        )}
+                      >
+                        {"Logistical Analysis"}
+                      </div>
                     }
-                    title={"Fast Prototyping"}
-                  />
-
-                  <FeatureCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.featureCard___1Ii3K
-                    )}
-                    description={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    }
-                    iconFront={
-                      <PencilIcon
-                        className={classNames(defaultcss.all, sty.svg__aQsR)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Design Phase"}
-                  />
-
-                  <FeatureCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.featureCard__sjAmi
-                    )}
-                    description={
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    }
-                    iconFront={
-                      <LightningIcon
-                        className={classNames(defaultcss.all, sty.svg__a6LIq)}
-                        role={"img"}
-                      />
-                    }
-                    title={"Develop & Launch"}
                   />
                 </p.Stack>
               </div>
@@ -429,12 +430,6 @@ function PlasmicHome__RenderFunc(props: {
                 />
               </p.Stack>
 
-              <Testimonial
-                data-plasmic-name={"testimonial"}
-                data-plasmic-override={overrides.testimonial}
-                className={classNames("__wab_instance", sty.testimonial)}
-              />
-
               <HomeCta
                 data-plasmic-name={"homeCta"}
                 data-plasmic-override={overrides.homeCta}
@@ -455,10 +450,9 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "topSection", "testimonial", "homeCta", "footer"],
+  root: ["root", "header", "topSection", "homeCta", "footer"],
   header: ["header"],
   topSection: ["topSection"],
-  testimonial: ["testimonial"],
   homeCta: ["homeCta"],
   footer: ["footer"]
 } as const;
@@ -469,7 +463,6 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   topSection: typeof TopSection;
-  testimonial: typeof Testimonial;
   homeCta: typeof HomeCta;
   footer: typeof Footer;
 };
@@ -537,7 +530,6 @@ export const PlasmicHome = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     topSection: makeNodeComponent("topSection"),
-    testimonial: makeNodeComponent("testimonial"),
     homeCta: makeNodeComponent("homeCta"),
     footer: makeNodeComponent("footer"),
 

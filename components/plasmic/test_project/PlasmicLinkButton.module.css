@@ -40,3 +40,7 @@
 .slotText__type_outlineBlue {
   color: rgb(24, 119, 242) /* plasmic-token: p-fCTrfjtL4 */;
 }
+.root:hover .slotText {
+  color: rgb(118, 62, 230) /* plasmic-token: j66tZMkmScX9 */;
+  font-weight: 700;
+}

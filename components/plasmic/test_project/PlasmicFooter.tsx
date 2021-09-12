@@ -42,7 +42,7 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_test_project.module.css"; // plasmic-import: 9s3hvugvPEapsUg57TTaoR/projectcss
 import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: URmcGzGZGqG/css
 
-import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: b_x6v9Y693on/icon
+import PlaneLogosvgIcon from "./icons/PlasmicIcon__PlaneLogosvg"; // plasmic-import: bKgI4impz/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: JijZUWV4OVqm/icon
 import TwitterIconIcon from "./icons/PlasmicIcon__TwitterIcon"; // plasmic-import: 7nqxpjWBlU_Y/icon
 import GithubIconIcon from "./icons/PlasmicIcon__GithubIcon"; // plasmic-import: RDLQIcBmYSl3/icon
@@ -106,7 +106,7 @@ function PlasmicFooter__RenderFunc(props: {
           <IconLink
             className={classNames("__wab_instance", sty.iconLink__nborS)}
             icon={
-              <LogoIcon
+              <PlaneLogosvgIcon
                 className={classNames(defaultcss.all, sty.svg___7ZeAg)}
                 role={"img"}
               />

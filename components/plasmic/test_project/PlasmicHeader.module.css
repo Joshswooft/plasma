@@ -19,6 +19,7 @@
   object-fit: cover;
   width: 48px;
   height: 48px;
+  color: rgb(0, 153, 230) /* plasmic-token: 7t3bUsmR2G1 */;
   flex-shrink: 0;
 }
 .freeBox {
@@ -70,6 +71,9 @@
 }
 .linkButton__ucy8U:global(.__wab_instance) {
   position: relative;
+}
+.text {
+  height: auto;
 }
 .linkButton__eroca:global(.__wab_instance) {
   position: relative;
