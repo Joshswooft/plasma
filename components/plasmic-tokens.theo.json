@@ -993,7 +993,7 @@
     {
       "name": "Spectrum/Coral/50",
       "type": "color",
-      "value": "#F5533D",
+      "value": "rgb(245,83,61)",
       "category": "color",
       "meta": {
         "projectId": "seaQhLVS4bbjiGvJJrRwyL",
